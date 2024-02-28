@@ -1,0 +1,88 @@
+<div class="container mt-4">
+  <div class="card">
+    <nav class="navbar navbar-expand navbar-light bg-light">
+      <a class="navbar-brand" href="#">Parking Management</a>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item px-2">
+            <a class="nav-link active" href="/dashboard">Company</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="/dashboard/employee">Employee</a>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-danger">Logout</button>
+          </li>
+        </ul>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+    <div class="card-body">
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary mb-3" data-toggle="modal" data-target="#exampleModal">
+        Add Company
+      </button>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Slot Level</th>
+            <th>No of Slots</th>
+            <!-- <th>No of Employees</th> -->
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr *ngFor="let company of companyList" >
+            <td>{{company.companyName}}</td>
+            <td>{{company.level}}</td>
+            <td>{{company.slots}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add Company Details</h5>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+
+        <div class="card-body">
+          <form id="companyForm">
+            <div class="form-group">
+              <label for="companyName">Company Name</label>
+              <input type="text" class="form-control" id="companyName" placeholder="Enter company name" name="companyName" [(ngModel)]="companyName" required>
+            </div>
+            <div class="form-group">
+              <label for="level">Level</label>
+              <input type="number" class="form-control" id="level" placeholder="Enter level/floor" name="level" [(ngModel)]="level" required>
+            </div>
+            <div class="form-group">
+              <label for="slotsAllocated">Allocate Slots</label>
+              <input type="number" class="form-control" id="slotsAllocated" name="slotsAllocated" [(ngModel)]="slotsAllocated"
+                placeholder="Enter number of slots available" required>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id="addCompany" (click)="createCompany()">Add Company</button>
+        <button type="button" class="btn btn-secondary" id="closeModel" data-dismiss="modal" >Close</button>
+      </div>
+    </div>
+  </div>
+</div>

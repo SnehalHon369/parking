@@ -1,0 +1,81 @@
+<div class="container mt-4">
+  <div class="card">
+    <nav class="navbar navbar-expand navbar-light bg-light">
+      <a class="navbar-brand" href="#">Parking Management</a>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item px-2">
+            <a class="nav-link" href="/dashboard">Company</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link active" href="/dashboard/employee">Employee</a>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-danger">Logout</button>
+          </li>
+        </ul>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+    <div class="card-body">
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary mb-3" data-toggle="modal" data-target="#exampleModal">
+        Add Employee
+      </button>
+
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Company</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- <tr>
+            <td>1</td>
+            <td>snehal</td>
+          </tr> -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add Employee Details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" id="username" name="username" [(ngModel)]="username" placeholder="Enter username">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" name="password" [(ngModel)]="password" placeholder="Enter password">
+          </div>
+          <div class="form-group">
+            <label for="company">Select Company</label>
+            <select name="company" id="company" class="form-control" [(ngModel)]="company">
+              <option value="" hidden selected disabled>Select Company</option>
+            </select>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" (click)="createUser()">Add Employee</button>
+        <button type="button" class="btn btn-secondary" id="closeModel" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
