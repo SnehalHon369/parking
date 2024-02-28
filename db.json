@@ -1,0 +1,454 @@
+{
+  "users": [
+    {
+      "id": "6776",
+      "username": "snehal",
+      "password": "asdf",
+      "companyName": "BMC",
+      "allocatedSlot": ""
+    },
+    {
+      "id": "9431",
+      "username": "sumit",
+      "password": "asdf",
+      "companyName": "TCS",
+      "allocatedSlot": ""
+    }
+  ],
+  "company": [
+    {
+      "id": "3298",
+      "companyName": "BMC",
+      "slots": 10,
+      "level": 0
+    },
+    {
+      "id": "1793",
+      "companyName": "TCS",
+      "slots": 10,
+      "level": 0
+    }
+  ],
+  "slots": [
+    {
+      "slotId": "L0 - S0",
+      "level": 0,
+      "status": 0,
+      "id": "a3cf"
+    },
+    {
+      "slotId": "L0 - S1",
+      "level": 0,
+      "status": 0,
+      "id": "6275"
+    },
+    {
+      "slotId": "L0 - S2",
+      "level": 0,
+      "status": 0,
+      "id": "a6e3"
+    },
+    {
+      "slotId": "L0 - S3",
+      "level": 0,
+      "status": 0,
+      "id": "3bd9"
+    },
+    {
+      "slotId": "L0 - S4",
+      "level": 0,
+      "status": 0,
+      "id": "82a3"
+    },
+    {
+      "slotId": "L0 - S5",
+      "level": 0,
+      "status": 0,
+      "id": "3bc9"
+    },
+    {
+      "slotId": "L0 - S6",
+      "level": 0,
+      "status": 0,
+      "id": "41b3"
+    },
+    {
+      "slotId": "L0 - S7",
+      "level": 0,
+      "status": 0,
+      "id": "cd7b"
+    },
+    {
+      "slotId": "L0 - S8",
+      "level": 0,
+      "status": 0,
+      "id": "7fda"
+    },
+    {
+      "slotId": "L0 - S9",
+      "level": 0,
+      "status": 0,
+      "id": "deff"
+    },
+    {
+      "slotId": "L0 - S10",
+      "level": 0,
+      "status": 0,
+      "id": "dcfe"
+    },
+    {
+      "slotId": "L0 - S11",
+      "level": 0,
+      "status": 0,
+      "id": "bb9d"
+    },
+    {
+      "slotId": "L0 - S12",
+      "level": 0,
+      "status": 0,
+      "id": "9f9e"
+    },
+    {
+      "slotId": "L0 - S13",
+      "level": 0,
+      "status": 0,
+      "id": "4efa"
+    },
+    {
+      "slotId": "L0 - S14",
+      "level": 0,
+      "status": 0,
+      "id": "0dfe"
+    },
+    {
+      "slotId": "L0 - S15",
+      "level": 0,
+      "status": 0,
+      "id": "d16a"
+    },
+    {
+      "slotId": "L0 - S16",
+      "level": 0,
+      "status": 0,
+      "id": "2375"
+    },
+    {
+      "slotId": "L0 - S17",
+      "level": 0,
+      "status": 0,
+      "id": "3b3a"
+    },
+    {
+      "slotId": "L0 - S18",
+      "level": 0,
+      "status": 0,
+      "id": "590e"
+    },
+    {
+      "slotId": "L0 - S19",
+      "level": 0,
+      "status": 0,
+      "id": "0e20"
+    },
+    {
+      "slotId": "L1 - S0",
+      "level": 1,
+      "status": 0,
+      "id": "b436"
+    },
+    {
+      "slotId": "L1 - S1",
+      "level": 1,
+      "status": 0,
+      "id": "5a49"
+    },
+    {
+      "slotId": "L1 - S2",
+      "level": 1,
+      "status": 0,
+      "id": "2336"
+    },
+    {
+      "slotId": "L1 - S3",
+      "level": 1,
+      "status": 0,
+      "id": "e715"
+    },
+    {
+      "slotId": "L1 - S4",
+      "level": 1,
+      "status": 0,
+      "id": "67b4"
+    },
+    {
+      "slotId": "L1 - S5",
+      "level": 1,
+      "status": 0,
+      "id": "0f6c"
+    },
+    {
+      "slotId": "L1 - S6",
+      "level": 1,
+      "status": 0,
+      "id": "6af3"
+    },
+    {
+      "slotId": "L1 - S7",
+      "level": 1,
+      "status": 0,
+      "id": "51d3"
+    },
+    {
+      "slotId": "L1 - S8",
+      "level": 1,
+      "status": 0,
+      "id": "4326"
+    },
+    {
+      "slotId": "L1 - S9",
+      "level": 1,
+      "status": 0,
+      "id": "620b"
+    },
+    {
+      "slotId": "L1 - S10",
+      "level": 1,
+      "status": 0,
+      "id": "7f3e"
+    },
+    {
+      "slotId": "L1 - S11",
+      "level": 1,
+      "status": 0,
+      "id": "7b32"
+    },
+    {
+      "slotId": "L1 - S12",
+      "level": 1,
+      "status": 0,
+      "id": "7b35"
+    },
+    {
+      "slotId": "L1 - S13",
+      "level": 1,
+      "status": 0,
+      "id": "f946"
+    },
+    {
+      "slotId": "L1 - S14",
+      "level": 1,
+      "status": 0,
+      "id": "7c2c"
+    },
+    {
+      "slotId": "L1 - S15",
+      "level": 1,
+      "status": 0,
+      "id": "0b1c"
+    },
+    {
+      "slotId": "L1 - S16",
+      "level": 1,
+      "status": 0,
+      "id": "99bb"
+    },
+    {
+      "slotId": "L1 - S17",
+      "level": 1,
+      "status": 0,
+      "id": "eff3"
+    },
+    {
+      "slotId": "L1 - S18",
+      "level": 1,
+      "status": 0,
+      "id": "0fb6"
+    },
+    {
+      "slotId": "L1 - S19",
+      "level": 1,
+      "status": 0,
+      "id": "dfac"
+    },
+    {
+      "slotId": "L1 - S20",
+      "level": 1,
+      "status": 0,
+      "id": "466c"
+    },
+    {
+      "slotId": "L1 - S21",
+      "level": 1,
+      "status": 0,
+      "id": "d551"
+    },
+    {
+      "slotId": "L1 - S22",
+      "level": 1,
+      "status": 0,
+      "id": "2c15"
+    },
+    {
+      "slotId": "L1 - S23",
+      "level": 1,
+      "status": 0,
+      "id": "5b77"
+    },
+    {
+      "slotId": "L1 - S24",
+      "level": 1,
+      "status": 0,
+      "id": "bc90"
+    },
+    {
+      "slotId": "L2 - S0",
+      "level": 2,
+      "status": 0,
+      "id": "7df4"
+    },
+    {
+      "slotId": "L2 - S1",
+      "level": 2,
+      "status": 0,
+      "id": "87e8"
+    },
+    {
+      "slotId": "L2 - S2",
+      "level": 2,
+      "status": 0,
+      "id": "cd24"
+    },
+    {
+      "slotId": "L2 - S3",
+      "level": 2,
+      "status": 0,
+      "id": "1d89"
+    },
+    {
+      "slotId": "L2 - S4",
+      "level": 2,
+      "status": 0,
+      "id": "fa2d"
+    },
+    {
+      "slotId": "L2 - S5",
+      "level": 2,
+      "status": 0,
+      "id": "7223"
+    },
+    {
+      "slotId": "L2 - S6",
+      "level": 2,
+      "status": 0,
+      "id": "b72a"
+    },
+    {
+      "slotId": "L2 - S7",
+      "level": 2,
+      "status": 0,
+      "id": "a493"
+    },
+    {
+      "slotId": "L2 - S8",
+      "level": 2,
+      "status": 0,
+      "id": "915c"
+    },
+    {
+      "slotId": "L2 - S9",
+      "level": 2,
+      "status": 0,
+      "id": "7ce7"
+    },
+    {
+      "slotId": "L2 - S10",
+      "level": 2,
+      "status": 0,
+      "id": "b7a1"
+    },
+    {
+      "slotId": "L2 - S11",
+      "level": 2,
+      "status": 0,
+      "id": "7d0e"
+    },
+    {
+      "slotId": "L2 - S12",
+      "level": 2,
+      "status": 0,
+      "id": "fa77"
+    },
+    {
+      "slotId": "L2 - S13",
+      "level": 2,
+      "status": 0,
+      "id": "d954"
+    },
+    {
+      "slotId": "L2 - S14",
+      "level": 2,
+      "status": 0,
+      "id": "97fc"
+    },
+    {
+      "slotId": "L2 - S15",
+      "level": 2,
+      "status": 0,
+      "id": "0313"
+    },
+    {
+      "slotId": "L2 - S16",
+      "level": 2,
+      "status": 0,
+      "id": "3b51"
+    },
+    {
+      "slotId": "L2 - S17",
+      "level": 2,
+      "status": 0,
+      "id": "6f2b"
+    },
+    {
+      "slotId": "L2 - S18",
+      "level": 2,
+      "status": 0,
+      "id": "2b35"
+    },
+    {
+      "slotId": "L2 - S19",
+      "level": 2,
+      "status": 0,
+      "id": "baea"
+    },
+    {
+      "slotId": "L2 - S20",
+      "level": 2,
+      "status": 0,
+      "id": "ed72"
+    },
+    {
+      "slotId": "L2 - S21",
+      "level": 2,
+      "status": 0,
+      "id": "c8d5"
+    },
+    {
+      "slotId": "L2 - S22",
+      "level": 2,
+      "status": 0,
+      "id": "8881"
+    },
+    {
+      "slotId": "L2 - S23",
+      "level": 2,
+      "status": 0,
+      "id": "017d"
+    },
+    {
+      "slotId": "L2 - S24",
+      "level": 2,
+      "status": 0,
+      "id": "2f68"
+    }
+  ]
+}

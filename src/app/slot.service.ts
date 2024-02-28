@@ -30,16 +30,36 @@ export class SlotService {
     const result = await fetch("http://localhost:3000/slots", {})
     const data = await result.json()
 
-    return data.find((slot:any) => {
+    return data.find((slot: any) => {
       return slot.slotId === slotId
     })
+  }
+
+  public async getAvailableSlotsForCompany(companyName: string) {
+    const companyResult = await fetch("http://localhost:3000/company", {})
+    const companyData = await companyResult.json()
+
+    const company = companyData.find((company: any) => {
+      return company.companyName === companyName
+    })
+
+    const { slots, level } = company;
+
+    const slotsResult = await fetch("http://localhost:3000/slots", {})
+    const slotsData = await slotsResult.json()
+
+    const slotsOfLevel =  slotsData.filter((slot: any) => {
+      return slot.level === level
+    })
+
+    return slotsOfLevel;
   }
 
   public async isSlotAllocated(slotId: string) {
     const result = await fetch("http://localhost:3000/slots", {})
     const data = await result.json()
 
-    const slot =  data.find((slot:any) => {
+    const slot = data.find((slot: any) => {
       return slot.slotId === slotId
     })
 
@@ -49,23 +69,39 @@ export class SlotService {
     return false;
   }
 
-  public async allocateSlot(slotId: string, userId: number) {
-
+  public async allocateSlot(slotId: string) {
     const result = await fetch("http://localhost:3000/slots", {})
     const data = await result.json()
 
-    const slot =  data.find((slot:any) => {
+    const slot = data.find((slot: any) => {
       return slot.slotId === slotId
     })
 
     if (slot) {
-      slot.heldByUser = userId;
       slot.status = ESlotStatus.occupied;
     }
 
     return await (await fetch(`http://localhost:3000/slots/${slot.id}`, {
-      method:"PATCH",
-      body:JSON.stringify(slot)
+      method: "PATCH",
+      body: JSON.stringify(slot)
+    })).json()
+  }
+  
+  public async deAllocateSlot(slotId: string) {
+    const result = await fetch("http://localhost:3000/slots", {})
+    const data = await result.json()
+
+    const slot = data.find((slot: any) => {
+      return slot.slotId === slotId
+    })
+
+    if (slot) {
+      slot.status = ESlotStatus.available;
+    }
+
+    return await (await fetch(`http://localhost:3000/slots/${slot.id}`, {
+      method: "PATCH",
+      body: JSON.stringify(slot)
     })).json()
   }
 }

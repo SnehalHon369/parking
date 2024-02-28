@@ -1,10 +1,11 @@
 import { ESlotStatus } from "./enum";
 
 export interface IUser {
-    id?: number;
+    id?: string;
     username: string;
     password: string;
     companyName: string;
+    allocatedSlot?:string;
 }
 
 export interface ISlot {
@@ -12,6 +13,7 @@ export interface ISlot {
     level: number;
     status: ESlotStatus;
     heldByUser?: number;
+    id?:string;
 }
 
 export interface ICompany {

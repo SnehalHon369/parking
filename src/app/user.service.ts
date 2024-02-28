@@ -21,31 +21,39 @@ export class UserService {
     return await (await fetch("http://localhost:3000/users", {})).json()
   }
 
-  public async getUserById(userId: number) {
+  public async getUserById(userId: string) {
     return await (await fetch(`http://localhost:3000/users/${userId}`, {})).json()
+  }
+
+  public async updateUserSlot(userId:string, allocatedSlot:string) {
+    return await(await fetch(`http://localhost:3000/users/${userId}`, {
+      method:"PATCH",
+      body:JSON.stringify({allocatedSlot})
+    })).json();
   }
 
   public async userLogin(username: string, password: string){ //successful/unseccessful: 1 = admin, 2 = user, 3 = invalid cerdentials
     if (username === "admin" && password === "admin@123") {
-      return 1;
+      return {status:1, user:{username:"admin"}};
     }
     
     const users = await (await fetch("http://localhost:3000/users/", {})).json()
 
     let user: (IUser | undefined);
     if(users) {
+      console.log({users})
       user = users.find((user: IUser) => {
         return user.username === username;
       })
     } else {
-      return 3;
+      return {status:3};
     }
 
     if (user) {
       if (user.password === password) {
-        return 2;
+        return {status:2, user};
       }
     }
-    return 3;
+    return {status:3};
   }
 }

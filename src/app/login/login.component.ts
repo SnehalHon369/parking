@@ -18,13 +18,16 @@ export class LoginComponent {
   }
 
   login():void {
-    this.UserService.userLogin(this.username, this.password).then(loginStatus=>{
-      if(loginStatus == 1) {
+    this.UserService.userLogin(this.username, this.password).then(data=>{
+      if(data.status == 1) {
         // admin
         console.log("admin")
-      } else if (loginStatus == 2) {
+        window.location.href="/dashboard"
+      } else if (data.status == 2) {
         // employee
         console.log("employee")
+        localStorage.setItem("user", JSON.stringify(data.user) )
+        window.location.href="/employee"
       } else {
         // invalid
         console.log("invalid")
